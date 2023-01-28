@@ -1,0 +1,30 @@
+<!-- <div>
+	<canvasjs-chart [options]="chartOptions"></canvasjs-chart>    
+</div> -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #d7d7d7;;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="#"><h1 style="color: steelblue;">Magnit</h1></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" routerLinkActive="active" routerLink="/home">Submit Survey</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"routerLinkActive="active" routerLink="/metrics">View Metrics</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" style="display: contents;" >
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width:440px;margin-left: 400px;margin-right: 40px;">
+      <button class="btn my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- <div>
+  <canvasjs-chart [options]="chartOptions2" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>    
+</div>      -->
+<mat-chip-listbox class="mat-mdc-chip-set-stacked" aria-label="Color selection">
+  <mat-chip-option color="accent" class="chip-option-mgnt"><h3 style="padding-left: 110px; color: steelblue;">Magnit Employee Survey</h3>  </mat-chip-option>
+</mat-chip-listbox>
+<router-outlet></router-outlet>

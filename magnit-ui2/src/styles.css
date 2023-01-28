@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+html, body { height: 100%;background-color: steelblue; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+#toast-container {
+    top: 90px !important;
+    right: 5px !important;
+}
+#toast-container .toast-close-button {
+    background-color: darkorange !important;
+    border-radius: 8px !important;
+    position: absolute !important;
+    right: 0px !important;
+}
+#toast-container > div {
+    opacity:1;
+    pointer-events: stroke !important;
+    width: 300px !important;
+    opacity: 1 !important;
+    height: 75px !important; 
+    border-radius: 5px !important;
+}
+
+.toast {
+    font-size: initial !important;
+    border: initial !important;
+    backdrop-filter: blur(0) !important;
+  }
+  .toast-success {
+    background-color: #51A351 !important;
+  }
+  .toast-error {
+    background-color: #BD362F !important;
+  }
+  .toast-info {
+    background-color: #2F96B4 !important;
+  }
+  .toast-warning {
+    background-color: #F89406 !important;
+  }

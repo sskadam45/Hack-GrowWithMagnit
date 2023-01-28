@@ -1,0 +1,22 @@
+
+  <div *ngIf="totalEmpHappynessMatirx" class="chart-view"> 
+    <canvasjs-chart [options]="totalEmpHappynessMatirx" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>    
+  </div> 
+
+  <div *ngIf="traningMatrics" class="chart-view">
+    <canvasjs-chart [options]="traningMatrics" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>    
+  </div> 
+
+  <div *ngIf="foodMatrics" class="chart-view">
+    <canvasjs-chart [options]="foodMatrics" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>    
+  </div> 
+
+  <div *ngIf="officeMetrics" class="chart-view">
+    <canvasjs-chart [options]="officeMetrics" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>    
+  </div> 
+  <div *ngIf="happinesMetrics" class="chart-view"> 
+    <canvasjs-chart [options]="happinesMetrics" [styles]="{width: '100%', height:'360px'}" (chartInstance)="getChartInstance($event)"></canvasjs-chart>    
+  </div>  
+  
+  
+   
